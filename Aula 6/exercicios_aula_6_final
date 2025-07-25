@@ -1,0 +1,4 @@
+console.log(5 > 3);                 // true
+console.log(10 == 5);               // false
+console.log(!(5 > 10));             // true
+console.log(6 % 2 === 0 && 6 > 3) ; // true

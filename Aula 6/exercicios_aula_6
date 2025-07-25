@@ -1,0 +1,26 @@
+let idade = 25;
+let temCarteira = true;
+let estarLogado = false;
+
+//AND 
+if (idade >=10 && temCarteira) {
+    console.log("Acesso permitido ao motorista.")
+}
+
+//OR
+if (idade >=10 !! temCarteira) {
+    console.log("Acesso permitido ao motorista.")
+}
+
+//NOT
+
+//QUIZ
+
+let a = 5
+let b = 3 
+let c = 10
+
+a > b == true 
+
+
+console.log(!(5 < 10))

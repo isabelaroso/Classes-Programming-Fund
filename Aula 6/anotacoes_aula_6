@@ -1,0 +1,73 @@
+Operações lógicas 
+
+Operações aritméticas:
+
++ Soma // a + b
+- Subtração // a - b
+x Multiplicação // a*b
+  Divisão // a / b
+  Resto // a % b - resto da divisão de a por b
+
+//13
+//1
+
+Operações de comparação 
+
+== igual 
+!= diferente
+> maior 
+< menor 
+>= maior ou igual
+<= menor ou igual
+
+let idade = 20;
+
+console.log(idade == 20) // vai ser printado um true
+console.log(idade > 18) // vai ser printado um true 
+
+5 == "5"            // true -> string "5" é convertida para número, independende de qual posição está. também vale para soma. // 5 + "5" = 55
+true == 1           // true -> true é tratado como 1
+false == "0"        // true -> logo, true será 1. 
+null == undefined   // true -> considerando iguais pelo Javascript
+[] == " "           // true -> array vazia vira string " "
+[1] == "1"          // true -> [1] vira 1
+0 == false          // true -> ambos considerados "falsy"
+
+console.log(5 + "5") // imprimi 55 
+
+- Para verificar qual o tipo de variável que utilizamos: typeoff 
+
+
+COMPARAÇÃO ESTRITA 
+
+5 === "5"   // false -> number vs string
+true === 1 // false -> boolean vs nu,ber 
+null === undefined // false -> tipos diferentes
+[] === " " // object vs string
+[1] === "1" // 
+0 === false // 
+
+Para transformar em uma string -> console.log(a.tostring)
+
+OPERAÇÕES LÓGICAS
+
+&& //  E (AND): condição 1 E condição 2 --> mais exigente, ambos precisam ser true para dar TRUE 
+|| // OU (OR): condição1 OU condição2  --> mais flexível, um apenas precisa ser true para dar TRUE
+!  // NÃO (NOT): NÃO condição --> inverte. Ex. console.log(!var_temguardachuva) -> se tiver guardachuva, vai ser false, se nao tiver, vai ser true
+
+Tabela verdades programação
+
+
+True E false ---> se os dois forem verdadeiro, vai ser True. Se um for falso , vai ser false
+
+
+
+Resto da divisao de um numero ser 0, quer dizer que número é par 
+
+
+
+
+VERDADEIIRO
+FALSO
+FALSO 
+VERDADEIRO
