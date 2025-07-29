@@ -1,0 +1,17 @@
+let x = 5;
+x++
+// vai dar 6. O primeiro printa o "x" e o segundo acrescenta "1"
+ 
+let x = 5;
+x += 10; // somo no próprio x, +10. Ficando 15
+
+x += y ---> x = x + y
+x += y ---> x = x * y
+
+
+let x = 5;
+x++;
+ 
+// x final = 6
+
+15 is divided by 9 -> 15  %  9

@@ -1,0 +1,75 @@
+// EXERCÍCIO 1
+// Ana trabalhou como freelancer e ganha R$30 por hora. 
+// No mês passado, ela trabalhou 160 horas. Quanto ela recebeu no final do mês?
+let valorHora = 30;
+let horasTrabalhadas = 160;
+let salario = horasTrabalhadas * valorHora;
+// (`${nome} tem ${idade} anos, pesa ${peso} kg`)
+console.log (salario);
+console.log (`Ana trabalhou ${horasTrabalhadas} horas por ${valorHora} reais a hora e recebeu ${salario} reais de salário no mês`);
+
+//EXERCÍCIO 2
+//  Desconto em produto
+// Fernanda quer comprar uma jaqueta de R$200. A loja está oferecendo 10% de desconto
+// Qual será o valor final a pagar
+
+let valorJaqueta = 200;
+let descontoLoja = 0.1; //10%
+
+let valorJaquetaComDesconto = valorJaqueta * descontoLoja;
+console.log(valorJaquetaComDesconto)
+
+//EXERCÍCIO 3
+// //Julia está se cadastrando em um site que exige ser ter 18 anos ou mais de idade.
+//Ela tem 17 anos. Verifique se Julia é maior de idade
+
+let idade = 17;
+let maiorDeIdade = 18;
+
+console.log(maiorDeIdade)
+
+// EXERCÍCIO 4
+// Um cliente comprou 22 itens. O caixa precisa saber se é um número par
+// Printe no consoe se o número é par ou ímpar
+
+let x = 22;
+let ehpar = x % 2 ==0 
+
+console.log (ehpar)
+
+// 
+function paridade(num) {
+    if (num % 2 !== o) {
+        console.log("é impar")
+    } else {
+        console.log("é par")
+    }
+}
+
+// EXERCÍCIO 6
+// Larissa só vai sair para a festa se não estiver chovendo ou se ela tiver guarda chuva
+// No dia da festa, Larissa olha pela janela e vê que está chovendo, mas ela não possui guarda chuva
+// Pense em como formular o problema em um algoritmo e, então, printe no console se a Larissa irá para a festa
+
+let tempo = "chuva";    
+let guardaChuva = "levou";
+
+if (tempo === "chuva" || guardaChuva === "levou") {
+    console.log(`Larissa vai à festa`);
+} else {
+    console.log(`Larissa não vai à festa`);
+}
+    
+//OUU 
+ 
+let tempo = true;     // está chovendo
+let levou = false;    // Larissa não levou o guarda-chuva
+
+let tempo = chuva;
+let levou = false;
+
+if (!tempo || guardaChuva) {
+    console.log(`Larissa vai à festa);
+} else {
+    console.log(´Larissa não vai à festa´);
+}
