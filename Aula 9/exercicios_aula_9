@@ -1,0 +1,146 @@
+//Julia está planejando férias e precisa decidir para onde viajar
+
+let saldoConta = 1800;
+
+if (saldoConta >= 1500) {
+    console.log(`Júlia viajará para a Disne`);
+}   else if ( 5000 < saldoConta <15000 ) {
+    console.log (`Júila visitará sua cidade natal em Minas Gerais`);
+}   else {
+    console.log (`Júlia passará um fim de semana no litoral`);
+}
+
+// ver se aluno foi ou não aprovado baseado em sua nota
+
+let nota = 8;
+
+if (nota >= 7) {
+    console.log("Aluno foi aprovado");
+} else {
+    console.log("Aluno foi reprovado");
+}
+
+// Carlos está decidindo o que comprar com o seu salário (saldo conta)
+
+let saldo = 12000;
+
+if (saldo >= 10000) {
+    console.log("Carlos comprará um novo computador");
+} else if (saldo >= 3000) {
+    console.log("Carlos comprará um smartphone");
+} else {
+    console.log("Carlos irá economizar");
+}
+
+// Ana quer saber quantas medalhas ganhará 
+
+let tempo = 3;
+
+if (tempo < 1) {
+    console.log("Ana ganhará uma medalha de ouro");
+} else if (tempo < 2) {
+    console.log("Ana ganhará uma medalha de prata");
+} else {
+    console.log("Ana ganhará uma medalha de bronze");
+}
+
+// Dia da semana - Dado um número de 1 a 7, indique qual é o dia correspondente da semana, começando com domingo
+
+let dia = 5;
+
+switch (dia) {
+    case 1:
+        console.log("Domingo");
+        break;                    // break corresponde a execução. Se coloca para que a execução não continue indo para os Cases abaixo e para que, se for verdadeiro, pare ali
+    case 2:
+        console.log("Segunda");
+        break;
+    case 3: 
+        console.log("Terça");
+        break;
+    case 4: 
+        console.log("Quarta");
+        break;
+    case 5:
+        console.log("Quinta");
+        break;
+    case 6:
+        console.log("Sexta");
+        break;
+    case 7:
+        console.log("Sábado");
+    default:                        // default é opcional e executado caso nenhum valor seja verdadeiro
+        console.log("Número inválido");
+}
+
+//Classificar a nota da prova 
+
+let notaProva = "B";
+
+switch (notaProva) {
+     case "A":
+        console.log("Excelente");
+        break;
+    case "B":
+        console.log("Bom");
+        break;
+    case "C":
+        console.log("Regular");
+        break;
+    case "D":
+        console.log("Ruim");
+        break;
+    case "F":
+        console.log("Insuficiente");
+        break;
+}
+
+// Dado um número de 1 a 4, indique a qual estaçao do ano corresponde:
+
+let numero = 3;
+
+switch (numero) {
+    case 1:
+        console.log("Primavera");
+        break;
+    case 2: 
+        console.log("Verão");
+        break;
+    case 3: 
+        console.log("Outono");
+        break;
+    case 4:
+        console.log("Inverno");
+        break;
+}
+
+//Faça um script que receba um valor para turno como M-matutino ou V-Vespertino ou N-Noturno
+//Imrpima a mensagem "bom dia!", "boa tarde!" ou "boa noite!" ou "valor inválido" 
+
+let turno = "V";
+
+switch (turno) {
+    case "M":
+        console.log("Bom dia!");
+        break;
+    case "V":
+        console.log("Boa tarde!");
+        break;
+    case "N":
+        console.log("Boa noite!");
+        break;
+    default:
+        console.log("Valor inválido");
+}
+
+//ou
+
+if (turno === "M") {
+    console.log("Bom dia");
+} else if (turno === "V") {
+    console.log("Boa tarde!");
+} else if (turno === "N") {
+    console.log("Boa noite!");
+} else {
+    console.log("Valor inválido");
+}
