@@ -1,0 +1,131 @@
+// João está colhendo maças. Ele colheu maças durante 7 dias. Cada dia ele conta quantas colheu. 
+// Imprima quantas maçãs João colheu em cada dia
+
+//pseudocódigo
+// para dia de 1 até 7 faça
+//      perguntar quantas maças João colheu no dia
+//      imprimir ""No dia [dia], Joao colheu [qntd] maças."
+//  fim para
+
+const prompt = require ("prompt-sync")()
+
+for (let dia = 1; dia <= 10; dia ++){
+    let quant = prompt (`Quantas maçãs João colheu no dia ${dia}?`);
+
+    console.log(`No dia ${dia}, João colheu ${quant} maçãs.`);
+}
+
+//Exercício 3. Você recebeu 10 número para analisar. Conte quantos são positivos, negativos e zeros. 
+
+// const prompt = require ("prompt-sync")()  -> já declarado
+
+let positivos = 0;
+let negativos = 0;
+let zeros = 0;
+
+for (let i = 1; i <= 10; i++) {
+    let num = parseInt(prompt(`Digite o número ${i}:`));
+
+    if (num > 0) {
+        positivos++; // o mesmo que positivos += 1
+    } else if (num < 0) {
+        negativos++;
+    } else {
+        zeros++;
+    }
+}
+
+console.log(`Quantidade de positivos: ${positivos}`);
+console.log(`Quantidade de negativos: ${negativos}`);
+console.log(`Quantidade de zeros: ${zeros}`);
+
+//Exercício 4
+// foto
+
+// const prompt = require ("prompt-sync")()  --> já declarado
+
+let verdes = 0 
+
+for (let i = 0; i<10; i++) {
+    let fruta = prompt ("Qual a cor da fruta?")
+
+    if (fruta.toLowerCase() == "vermelha" ) {
+        vermelhas++
+    } else if (fruta.toLowerCase() == "verde") {
+        verdes++
+    }
+}
+
+//Exercício 5: Soma de números
+// Faça um código que peça ao usuário para inserir números até que um número negativo seja inserido
+// Quando isso acontecer, retorne a soma de todos os números inseridos.
+
+// const prompt = require ("prompt-sync")()  --> já declarado
+
+let sum = 0;
+let number = 0;
+
+while (number >= 0) {
+    number = parseInt(prompt("Digite um número positivo (ou um número negativo para parar):"));
+    if (number >= 0) {
+        sum += number;
+    }
+}
+
+console.log("A soma dos números inseridos é:", sum);
+
+//Exercício 6: Validação de senha
+// Crie um código que valide a senha de um usuário
+// Para isso, crie uma variável (correctPassword) com o valor "1234". Depois, faça um loop que irá solicitar
+// a senha para o usuário, até que ele digite a senha correta. Quando aconteer, imprima "Senha correta! Acesso concedido"
+
+// const prompt = require ("prompt-sync")()  --> já declarado
+
+const correctPassword = "1234";
+let password = "";
+
+while (password !== correctPassword) {
+    password = prompt("Digite a senha correta:");
+}
+
+console.log("Senha correta! Acesso concedido.");
+
+//Exercício 7 - While
+// Crie um programa que apresenta um menu de opções ao usuário. Ele pode escolher entre diferentes operaçõe,
+// como verificar saldo, depositar, sacar ou sair do sistema. 
+// Defina o saldo inicial como R$1000,00. O loop while mantém o menu ativo até que o usuário escolha a opção de sair.
+
+// const prompt = require ("prompt-sync")()  --> já declarado
+
+let saldo = 1000;
+let running = true;
+
+while (running) {
+    console.log("\nMenu de Atendimento");
+    console.log("1. Verificar saldo");
+    console.log("2. Falar com atendente");
+    console.log("3. Sacar");
+    console.log("4. Sair");
+
+    let escolha = prompt("Escolha uma opção");
+
+    switch (escolha) {
+        case '1':
+            console.log(`Seu saldo é: R$ ${saldo}`);
+            break;
+        case '2': 
+            console.log(`transferindo para um de nossos atendentes`);
+            break;
+        case '3':
+            console.log(`transferinfo para a área de saque`);
+        case '4':
+            console.log(`Obrigada por usar o sistema. Até logo!`);
+            running = false;
+            break;
+        default:
+            console.log("Opção inválida. Por favor, escolha uma opção válida.");
+            break
+    }
+
+}
+
