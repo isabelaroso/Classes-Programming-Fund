@@ -1,0 +1,23 @@
+// While e For 
+// Modos de fluxo de controle para evitar repetir ações no código
+
+//Exemplo
+
+let bateria = 100;
+
+while (bateria > 20) {
+    console.log("Estou andando!" + bateria + "%");
+    bateria -= 15;
+}
+
+console.log("Passou");
+
+// For 
+
+const cars = ["Ford" , "Fiat", "Honda"];
+
+for let i = 0; i < cars.lenghts; i++ {
+    console.log(cars[i]);
+} 
+
+

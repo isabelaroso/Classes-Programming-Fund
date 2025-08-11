@@ -1,0 +1,41 @@
+// Outro exemplo
+
+const nomes = ["Ana", "Bruna", "Eva"];
+const sabores = ["chocolate", "morango" , "pistache"];
+
+for (let i = 0 ; i < nomes.lenght; i++) {
+    console.log("Nome: " + nomes[1] + "| Sabor favorito: " + Sabores [1]);
+
+}
+
+const alunas = [
+    {nome: "Ana" , sorvete: "chocolate" },
+    {nome: "Bruna", sorvete: "creme" },
+    {nome: "Eva", sorvete: "pistache" },
+
+];
+
+for (const aluna of alunas)
+    console.log("Nome: ${aluna.nome} | Sabor favorito: ${aluna.sorvete}");
+
+
+// Exercício 2 
+// Rafaela está recheando 10 donuts. Os donuts de número
+// - Múltiplo de 3 recebem recheio de chocolate
+// - Os outros recebem de baunilha
+
+// Use um for com if/else para mostrar o tipo de recheio de cada donut
+
+for (let i = 1; i <= 10; i++) {
+    if (i % 3 === 0) {
+        console.log("Donut " + i + ": recheado de chocolate");
+    } else {
+        console.log("Donut " + i + "é recheado de baunilha");
+    }
+}
+
+
+//Exercício 3
+// Júlia montou uma lanchonete virtual. Os clientes podem escolher entre:
+// 1) Ver o cardápio 2) Fazer um pedido 3) 
+
