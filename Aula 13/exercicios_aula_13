@@ -1,0 +1,51 @@
+Funções
+
+//São blocos de código que realizam uma tarefa particular.
+//Permitem organização e reutilização de código
+
+//Exemolo : função que faz sempre a soma de dois números que recebe como parâmetro
+
+function nomeDaFuncao(parametros) {
+
+    //estrutura da função
+    return retornoDaFuncao; //opcional
+}
+
+//Exemplo 1
+
+function somar (a,b) {
+    return a+b;
+}
+
+console.log(somar(2,3)); // S
+
+
+//Exemplo 2
+function calcularArea(largura, altura) {
+    return largura * altura;
+}
+
+console.log(calculararea(5,10)); //50 
+
+//Exemplo 3
+
+function criarMensagemParabens(nome) {
+    return `Parabens, ${nome}!`;
+}
+
+//armazenando o retorno
+let mensagem = criarMensagemParabens("Laura")
+
+console.log(mensagem)
+
+//EXPRESSAO DE FUNÇÃO:  UMA FUNÇÃOQUE É ATRIBUÍDA A UMA VARIÁVEL OU CONSTANTE
+
+const somar = function (a, b) {
+    return a + b;
+}; 
+
+console.log(somar(5, 6)); //1
+
+
+//Exercício:
+// Crie uma função que receba dois números e uma operação matemática ("+", "-", "*", "/" e retorne o resultado da operação entre os dois números)

@@ -1,0 +1,64 @@
+
+
+//OBJETOS: Estruturas que agrupam dados e comportamentos, armazenando valores em pares chave-valor
+//Dados -> Propriedades (ou atributos)
+
+//Objeto = coleção de chave: valor
+
+let person = {
+    name: "Natalia",
+    age: 31,
+};
+
+console.log(
+    "Hello, I am" + person.name + " and I am " + person{"age"} + " years old."
+);
+
+let cat = {
+    name: "Luna",
+    color: "Black",
+    age: 4   
+};
+
+console.log("The cat's name is " +
+    cat name +
+    ", color is" +
+    cat.color + 
+    ", and age is " + 
+    cat.age 
+);
+
+
+//2. Add and change
+// Add toy to the cat object
+// Change the "age" to another number
+
+cat.toy = "ball of yarn";
+cat.age = 5;
+
+//3. Object with method
+//Make an object "dog" with "name", "breed",
+//and a method "bark()" that prints "Woof!"
+
+let dog = {
+    name: "Marley",
+    breed: "Labrador",
+    bark: function () {
+        console.log("Woof!");
+    },
+};
+
+//Exercício 4
+
+let market = [
+    { name: "Apple", price: 1.5},
+    {name: "Banana", price: 1.0},
+    { name: "Cherry", price: 2.5},
+];
+
+for (let i = 0; i < market.length; i++) {
+    console.log("Product: " + market[i].name + ",Price: $" + market[i].price);
+}
+
+//Exercício 5
+// 
