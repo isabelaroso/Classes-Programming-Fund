@@ -1,0 +1,30 @@
+// REVISAO - FUNÇÕES DO JAVASCRIPT
+
+//Declaração da função
+
+function nomeDaFuncao(parâmetros) {
+    
+    //estrutura da função 
+    return retornoDaFuncao; //opcional
+
+}
+
+//Expressão da função
+
+const nomeDaFuncao = function(parâmetros) {
+
+    //bloco de código 
+    return resultado; //opcionl
+
+};
+
+//Arrow Function () => (...)
+
+//Completa:
+(a, b) => {return a + b}
+
+//Reduzida:
+(a, b) => a + b
+
+//Com 1 parâmetro:
+nome => "Olá, " + nome

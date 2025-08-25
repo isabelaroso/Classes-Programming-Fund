@@ -1,0 +1,60 @@
+//Exercício 
+
+//1. Crie um array chamado listaDeTarefas. Ele será usado para guardar as tarefas que um usuário adicionar
+
+let listDeTarefas = []
+
+//2. Crie uma função chamada adicionar tarefa(). 
+// - Pense: quais parâmetros essa função precisa para funcionar?
+// - O que deve acontecer dentro do corpo da função para que a nova tarefa seja incluída na lista?
+
+let listaDeTarefas = []
+
+function adicionarItem(item) {
+    listaDeTarefas.push(item)
+}
+
+adicionarItem("estudar fundamentos da programação")
+adicionarItem("entrega da tarefa x")
+
+console.log(listaDeTarefas)
+
+// EXERCÍCIO 3
+
+//1. Para o mesmo array de listaDeTarefas 
+//2. Crie uma função chamada removerTarefa ().
+// - Pense: quais parâmetros essa função precisa para funcionar?
+// - O que deve acontecer dentro do corpo da função para que a nova tarefa seja removida da lista?
+
+//3. Depois, teste seu código
+// Adicione pelo menos uma tarefa usando a função adicionarTarefa() criada no exercício anterior, e então remova essa tarefa
+// Mostre a lista completa no console para verificar se deu certo.
+
+
+function adicionarItem(item) {
+    listaDeTarefas.push(item)
+}
+
+function removerTarefa(item) {
+    // encontra a posição do item na lista
+    const index = listaDeTarefas.indexOf(item)
+    
+    // se o item existir (index >= 0), remove
+    if (index >= 0) {
+        listaDeTarefas.splice(index, 1)
+    } else {
+        console.log("Tarefa não encontrada:", item)
+    }
+}
+
+// Testando
+adicionarItem("estudar fundamentos da programação")
+adicionarItem("entrega da tarefa x")
+adicionarItem("ir à academia")
+
+console.log("Lista antes de remover:", listaDeTarefas)
+
+// removendo a tarefa "ir à academia"
+removerTarefa("ir à academia")
+
+console.log("Lista depois de remover:", listaDeTarefas)
