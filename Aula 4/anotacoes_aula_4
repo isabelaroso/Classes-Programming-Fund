@@ -1,0 +1,9 @@
+let idade : = 25  ;  //number
+let nome  : = 'Ana' ;  
+
+
+console.log("idade:", idade);
+console.log("nome:", nome):
+console.log("ativo:", ativo);
+console.log("nota:", 
+console.log("cidade:", cidade);)
